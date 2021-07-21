@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kel13.berinda_beritaindonesia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".kategori.Business"
+            android:label="Business" />
+        <activity
+            android:name=".kategori.Entertainment"
+            android:label="Entertainment" />
+        <activity
+            android:name=".kategori.Health"
+            android:label="Health" />
+        <activity
+            android:name=".kategori.Science"
+            android:label="Science" />
+        <activity
+            android:name=".kategori.Sports"
+            android:label="Sports" />
+        <activity
+            android:name=".kategori.Technology"
+            android:label="Technology" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="Detail News" />
+    </application>
+
+</manifest>
